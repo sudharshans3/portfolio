@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 5px solid #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 10px 0 5px;
+}
+
+header p {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.about,
+.projects {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  margin: 30px 0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about:hover,
+.projects:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.project {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-left: 5px solid #ffe563;
+}
+
+.project:hover {
+  background: #ffb963;
+  color: white;
+  transform: translateY(-5px);
+  border-color: #fff;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+</style>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001877.png" alt="My Profile Photo" width="200" height="200" class="profile-img">
+      <h1>Sudharshan</h1>
+      <h3>Web Developer | UI Designer | Student</h3>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a dedicated web developer with a strong foundation in HTML, CSS, and JavaScript, focused on building accessible, responsive, and performant user interfaces.<br><br>
+        I have hands-on experience in modern frontend development practices including semantic HTML5, CSS Grid/Flexbox layouts, modular JavaScript, and API integration.<br><br>
+        My approach emphasizes clean, maintainable code and user-first design. I enjoy optimizing UI performance and ensuring cross-browser compatibility.<br><br>
+        I'm currently expanding my skills in frameworks like React and exploring design systems, component-based architecture, and version control using Git.<br><br>
+        Whether collaborating in a team or working independently, I bring attention to detail, strong problem-solving skills, and a drive to continuously learn and improve.<br><br>
+        My mission is to create intuitive, elegant, and engaging digital experiences that balance both form and function.
+      </p>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Weather App</h3>
+          <p>A real-time weather app using OpenWeatherMap API. Responsive UI with dynamic icons and temperature updates based on your location.</p>
+        </div>
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>This personal portfolio site built with HTML & CSS. Clean layout, elegant animations, and mobile optimization.</p>
+        </div>
+        <div class="project">
+          <h3>To-Do List App</h3>
+          <p>A JavaScript-powered task manager. Add, remove, and filter your tasks with persistent storage using localStorage.</p>
+        </div>
+        <div class="project">
+          <h3>Responsive Blog Template</h3>
+          <p>A multi-column blog layout using Flexbox and media queries. Includes article preview cards and hover effects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sudharshan | Contact: <a href="mailto:sudharshan@example.com">sudharshan@example.com</a></p>
+  </footer>
+</body>
+</html>
